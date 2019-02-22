@@ -60,7 +60,6 @@ function App() {
       <Row type="flex" justify="center">
         <Col xs={24} md={18}>
           <form onSubmit={e => {
-            console.log('asda');
             e.preventDefault()
             if (!textInput.trim()) {
               return;
