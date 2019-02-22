@@ -60,6 +60,7 @@ function App() {
       <Row type="flex" justify="center">
         <Col xs={24} md={18}>
           <form onSubmit={e => {
+            console.log('asda');
             e.preventDefault()
             if (!textInput.trim()) {
               return;
@@ -69,7 +70,7 @@ function App() {
           }}>
             <Row type="flex" justify="start" gutter={8}>
               <Col><Input value={textInput} onChange={e => setTextInput(e.target.value)}/></Col>
-              <Col><Button type="submit">Add Todo</Button></Col>
+              <Col><Button htmlType="submit">Add Todo</Button></Col>
             </Row>
           </form>
           <Row type="flex" justify="start" align="middle" gutter={8} style={{ margin: '10px 0' }}>
