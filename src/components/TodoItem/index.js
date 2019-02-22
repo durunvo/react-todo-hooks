@@ -1,5 +1,4 @@
 import React from 'react';
-// import TodoList from '../../components/TodoList';
 import Checkbox from 'antd/lib/checkbox';
 import Row from 'antd/lib/row';
 import Col from 'antd/lib/col';
