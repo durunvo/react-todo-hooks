@@ -34,8 +34,8 @@ function App() {
 
   const progressTodo = () => {
     const todoWithOutDeletion = todos.filter(t => !t.deleted);
-    return parseInt(getVisibleTodos(todoWithOutDeletion, SHOW_COMPLETED).length * 100/ getVisibleTodos(todoWithOutDeletion, SHOW_ALL).length)
-  }
+    return parseInt(getVisibleTodos(todoWithOutDeletion, SHOW_COMPLETED).length * 100/ getVisibleTodos(todoWithOutDeletion, SHOW_ALL).length);
+  };
 
   const toggleTodo = (id, checked) => {
     setTodos(todos.map(todo => {
